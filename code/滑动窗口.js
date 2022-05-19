@@ -66,6 +66,7 @@ function maxSlidingWindow (nums, k) {
       }
       //  判断滑动窗口的状态，只有在被遍历的元素个数大于 k 的时候，才更新结果数组 (队列头元素始终是滑动窗口内的最大值)
       if (i >= k - 1) {
+        console.log(deque, 'deque')
           res.push(nums[deque[0]]);
       }
     }
